@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import ramirezramos.francisco.tarea2.databinding.AppDetailFragmentBinding;
 
-public class GameDetailFragment extends Fragment {
+public class AppDetailFragment extends Fragment {
 
     private AppDetailFragmentBinding binding;
 
@@ -33,18 +33,14 @@ public class GameDetailFragment extends Fragment {
         if (getArguments() != null) {
             String image = getArguments().getString("image");
             String name = getArguments().getString("name");
-            String releaseYear = getArguments().getString("releaseYear");
             String description = getArguments().getString("description");
-            String platforms = getArguments().getString("platforms");
 
             // Asignar los datos a los componentes
             Picasso.get()
                     .load(image)
                     .into(binding.image);
             binding.name.setText(name);
-            binding.releaseYear.setText(releaseYear);
             binding.description.setText(description);
-            binding.platforms.setText(platforms);
         }
     }
 
@@ -53,7 +49,7 @@ public class GameDetailFragment extends Fragment {
         super.onStart();
         // Cambia el título del ActionBar
         if (getActivity() != null) {
-            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(R.string.detalles_del_juego);
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(R.string.character_description);
         }
     }
 }

@@ -1,10 +1,10 @@
 package ramirezramos.francisco.tarea2;
 
-import static ramirezramos.francisco.tarea2.BR.character;
-
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
+
+import ramirezramos.francisco.tarea2.databinding.AppCardviewBinding;
 
 public class AppViewHolder extends RecyclerView.ViewHolder {
 

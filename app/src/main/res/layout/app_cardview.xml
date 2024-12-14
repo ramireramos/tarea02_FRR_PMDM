@@ -2,8 +2,8 @@
 
     <data>
         <variable
-            name="character"
-            type="ramirezramos.francisco.tarea2.charitem" />
+            name="app"
+            type="ramirezramos.francisco.tarea2.AppData" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -38,10 +38,10 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/chardescription"
+                    android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Character Description" />
+                    android:text="Character description" />
 
             </LinearLayout>
         </LinearLayout>
