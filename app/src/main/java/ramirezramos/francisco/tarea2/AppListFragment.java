@@ -7,7 +7,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +18,7 @@ import java.util.ArrayList;
 
 public class AppListFragment extends Fragment {
 
-    private AppListFragment binding; // Binding para el layout
+    private @NonNull AppListFragmentBinding binding; // Binding para el layout
     private ArrayList<AppData> characters; // Lista de juegos
     private AppRecyclerViewAdapter adapter; // Adaptador del RecyclerView
 
@@ -42,8 +41,8 @@ public class AppListFragment extends Fragment {
 
         // Configurar el RecyclerView
         adapter = new AppRecyclerViewAdapter(characters, getActivity());
-        binding.AppRecyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
-        binding.AppRecyclerview.setAdapter(adapter);
+        binding.charactersRecyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
+        binding.charactersRecyclerview.setAdapter(adapter);
 
 
     }
@@ -120,7 +119,7 @@ public class AppListFragment extends Fragment {
         super.onStart();
         // Cambia el título del ActionBar
         if (getActivity() != null) {
-            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(R.string.lista_de_personajes);
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(R.string.marioapp);
         }
     }
 }

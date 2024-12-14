@@ -3,12 +3,12 @@ package ramirezramos.francisco.tarea2;
 public class AppData {
 
     private final String image;
-    private final String name;
-    private final String description;
+    private final String character;
+    public final String description;
 
-    public AppData(String image, String name, String description) {
+    public AppData(String image, String character, String description) {
         this.image = image;
-        this.name = name;
+        this.character = character;
         this.description = description;
     }
 
@@ -17,7 +17,7 @@ public class AppData {
     }
 
     public String getName() {
-        return name;
+        return character;
     }
 
     public String getDescription() {

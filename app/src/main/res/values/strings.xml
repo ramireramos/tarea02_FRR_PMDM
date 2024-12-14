@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">tarea2</string>
     <string name="marioapp">MarioApp</string>
-    <string name="character_description">character description</string>
+    <string name="character_description">character_description</string>
 </resources>

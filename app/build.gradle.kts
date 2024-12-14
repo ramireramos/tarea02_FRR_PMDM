@@ -41,6 +41,7 @@ dependencies {
     implementation ("com.squareup.picasso:picasso:2.71828")
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.1")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.1")
+    implementation ("androidx.databinding:viewbinding:8.7.3")
 
     implementation(libs.appcompat)
     implementation(libs.material)

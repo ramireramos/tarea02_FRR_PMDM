@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
     public void characterClicked(AppData character, View view) {
         // Crear un Bundle para pasar los datos al GameDetailFragment
         Bundle bundle = new Bundle();
-        bundle.putString("name", character.getName()); // Pasa el nombre del juego
+        bundle.putString("character", character.getName()); // Pasa el nombre del juego
         bundle.putString("image", character.getImage()); // Pasa la imagen del juego
         bundle.putString("description", character.getDescription()); // Pasa la descripción o más datos que necesites
 
         // Navegar al GameDetailFragment con el Bundle
-        Navigation.findNavController(view).navigate(R.id.AppDetailFragment, bundle);
+    //    Navigation.findNavController(view).navigate(R.id.AppDetailFragment, bundle);
     }
     @Override
     public boolean onSupportNavigateUp() {

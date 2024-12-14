@@ -15,12 +15,12 @@ public class AppViewHolder extends RecyclerView.ViewHolder {
         this.binding = binding;
     }
 
-    public void bind (AppData app){
+    public void bind (AppData character){
         Picasso.get()
                 .load(character.getImage())
                 .into(binding.image);
         binding.character.setText(character.getName());
-        binding.description.setText(String.valueOf(name.description()));
+        binding.description.setText(String.valueOf(character.getDescription()));
         binding.executePendingBindings(); // Asegura que se apliquen los cambios de inmediato
     }
 }
