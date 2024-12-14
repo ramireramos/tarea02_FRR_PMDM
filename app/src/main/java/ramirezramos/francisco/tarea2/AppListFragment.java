@@ -19,8 +19,8 @@ import java.util.ArrayList;
 public class AppListFragment extends Fragment {
 
     private @NonNull AppListFragmentBinding binding; // Binding para el layout
-    private ArrayList<AppData> characters; // Lista de juegos
-    private AppRecyclerViewAdapter adapter; // Adaptador del RecyclerView
+    private ArrayList<AppData> characters; // Lista de personajes
+    private AppRecyclerViewAdapter adapter; // Adaptador del recyclerView
 
 
     @Nullable
@@ -36,10 +36,10 @@ public class AppListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Inicializa la lista de juegos
-        loadCharacters(); // Cargar los juegos (puedes implementar esta función para obtener datos)
+        // Inicializa la lista de personajes
+        loadCharacters(); // Los carga
 
-        // Configurar el RecyclerView
+        // Configura el recyclerView
         adapter = new AppRecyclerViewAdapter(characters, getActivity());
         binding.charactersRecyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.charactersRecyclerview.setAdapter(adapter);
@@ -52,64 +52,64 @@ public class AppListFragment extends Fragment {
         characters = new ArrayList<AppData>();
         // Llenar la lista con datos de videojuegos
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/71uS8Ra1aGL._AC_UF894,1000_QL80_.jpg", // Reemplaza con la ruta de la imagen
-                "Mario. El fontanero más dicharachero",
-                "Un juego de plataformas en un mundo vibrante lleno de sorpresas."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2023/04/super-mario-png-transparente.png?resize=600%2C600&ssl=1", // Reemplaza con la ruta de la imagen
+                "Mario",
+                "El héroe principal del Reino Champiñón. Mario es muy positivo y siempre está alegre. Lo podrás reconocer por sus overoles de color azul, su gorra roja y su característico bigote.. Here we go!!"
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/71C9pOGlKtL.jpg", // Reemplaza con la ruta de la imagen
-                "Mario Kart 8 Deluxe",
-                "Una versión mejorada de Mario Kart 8 con un modo de batalla renovado."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2023/04/Luigi-Mario-Bros-png.png?w=1000&ssl=1", // Reemplaza con la ruta de la imagen
+                "Luigi",
+                "Hermano de Mario y héroe del Reino Champiñón. Luigi es reconocido instantáneamente por su gorra y camisa de color verde."
 
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/81CbYA2Gt3L._AC_UF894,1000_QL80_.jpg", // Reemplaza con la ruta de la imagen
-                "Super Mario 3D World + Bowser's Fury",
-                "Aventura cooperativa en 3D con una misión en el mundo abierto de Bowser's Fury."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/08/super-mario-toad.png?resize=768%2C768&ssl=1", // Reemplaza con la ruta de la imagen
+                "Toad",
+                "Residente del Reino Champiñón, trabaja al servicio de la Princesa Peach. Toad tiene manchas rojas en la cabeza, aunque otros de su especie vienen en una variedad de colores."
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/81d3KS1-6OL.jpg", // Reemplaza con la ruta de la imagen
-                "Super Mario Maker 2",
-                "Diseña y comparte tus propios niveles de Mario en esta secuela."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/08/princess-peach-png.png?resize=768%2C768&ssl=1", // Reemplaza con la ruta de la imagen
+                "Princesa Peach",
+                "La querida princesa del Reino Champiñón. Es extremadamente amable y siempre está trabajando para crear un mundo en el que todos puedan convivir juntos y felices. Su famoso vestido color rosa es encantador."
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/81drkVN7GRL._AC_UF1000,1000_QL80_.jpg", // Reemplaza con la ruta de la imagen
-                "Super Mario Odyssey",
-                "Mario debe rescatar a la Princesa Peach utilizando su compañero, Cappy."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2023/04/bowser-png-Transparent.png?w=1000&ssl=1", // Reemplaza con la ruta de la imagen
+                "Bowser",
+                "El rey de los Koopas. Bowser es el archienemigo de Mario y siempre está causando estragos en el Reino Champiñón."
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/71FxEVBYddL._AC_UF1000,1000_QL80_.jpg", // Reemplaza con la ruta de la imagen
-                "Super Mario All-Stars",
-                "Colección remasterizada de los clásicos juegos de Mario."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2023/04/yoshi-png.png?resize=600%2C600&ssl=1", // Reemplaza con la ruta de la imagen
+                "Yoshi",
+                "El confiable compañero de Mario originario de la Isla de Yoshi. Es de color verde, pero otros de su especie vienen de otros colores, como rojo, azul, rosa y amarillo."
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/81XdRd9UNZL.jpg", // Reemplaza con la ruta de la imagen
-                "Super Mario Party",
-                "Un juego de fiesta con tableros virtuales y mini-juegos."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/08/super-mario-toadette.png?resize=768%2C768&ssl=1", // Reemplaza con la ruta de la imagen
+                "Toadette",
+                "Toadette tiene una gorra rosa con lunares blancos, que parece un simple cambio de los colores de los otros toads ya vistos. Ella tiene un conjunto único de trenzas, cada uno con dos trenzas rosas y una tercera trenza rosa con lunares blancos"
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/91bAhoyCcUL.jpg", // Reemplaza con la ruta de la imagen
-                "Mario Golf: Super Rush",
-                "Un enfoque divertido del golf con personajes de Mario."
+                "https://static.wikia.nocookie.net/mario/images/b/b0/Goomba_%28MPSS%29.png/revision/latest?cb=20211226140521&path-prefix=es", // Reemplaza con la ruta de la imagen
+                "Goomba",
+                "Antiguamente, los Goombas vivían en el Reino Champiñón, donde convivían con los Toads pacíficamente. No obstante, luego de que Bowser y su ejército de Koopas atacaran el reino, los Goombas decidieron unirse a las filas de Bowser y traicionar a los Toads"
         ));
 
         characters.add(new AppData(
-                "https://media.vandal.net/m/85340/paper-mario-the-origami-king-20205141527529_1.jpg", // Reemplaza con la ruta de la imagen
-                "Paper Mario: The Origami King",
-                "Mario debe detener al Rey Origami en esta aventura de rol."
+                "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2023/04/turtles-with-wings-super-mario-png.png?resize=600%2C600&ssl=1", // Reemplaza con la ruta de la imagen
+                "Koopa (o Paratroopa)",
+                "Los Paratroopa son las clásicas tortugas con alas del mundo de Mario. Su función es la misma que la de los Koopa: acabar con Mario por orden de Bowser.."
         ));
 
         characters.add(new AppData(
-                "https://m.media-amazon.com/images/I/81zgWwSnVfL.jpg", // Reemplaza con la ruta de la imagen
-                "Mario + Rabbids Sparks of Hope",
-                "Mario y los Rabbids deben salvar a los Sparks en esta aventura."
+                "https://static.wikia.nocookie.net/mario/images/4/40/Tn_051303_warioworld_wario05.jpg/revision/latest?cb=20120119225016&path-prefix=es", // Reemplaza con la ruta de la imagen
+                "Wario",
+                "La antítesis malvada de Mario. Esto se refleja en su personalidad malvada, y su gran astucia, todo lo contrario de Mario."
         ));
     }
 
