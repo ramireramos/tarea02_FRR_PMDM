@@ -73,7 +73,7 @@ public class AppListFragment extends Fragment {
         characters.add(new AppData(
                 "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/08/princess-peach-png.png?resize=768%2C768&ssl=1", // Reemplaza con la ruta de la imagen
                 "Princesa Peach",
-                "La querida princesa del Reino Champiñón. Es extremadamente amable y siempre está trabajando para crear un mundo en el que todos puedan convivir juntos y felices. Su famoso vestido color rosa es encantador."
+                "La querida princesa del Reino Champiñón. Es extremadamente amable y siempre está trabajando para crear un mundo en el que todos puedan convivir juntos y felices."
         ));
 
         characters.add(new AppData(
@@ -91,13 +91,13 @@ public class AppListFragment extends Fragment {
         characters.add(new AppData(
                 "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/08/super-mario-toadette.png?resize=768%2C768&ssl=1", // Reemplaza con la ruta de la imagen
                 "Toadette",
-                "Toadette tiene una gorra rosa con lunares blancos, que parece un simple cambio de los colores de los otros toads ya vistos. Ella tiene un conjunto único de trenzas, cada uno con dos trenzas rosas y una tercera trenza rosa con lunares blancos"
+                "Toadette tiene una gorra rosa con lunares blancos, que parece un simple cambio de los colores de los otros toads ya vistos. Ella tiene un conjunto único de trenzas."
         ));
 
         characters.add(new AppData(
                 "https://static.wikia.nocookie.net/mario/images/b/b0/Goomba_%28MPSS%29.png/revision/latest?cb=20211226140521&path-prefix=es", // Reemplaza con la ruta de la imagen
                 "Goomba",
-                "Antiguamente, los Goombas vivían en el Reino Champiñón, donde convivían con los Toads pacíficamente. No obstante, luego de que Bowser y su ejército de Koopas atacaran el reino, los Goombas decidieron unirse a las filas de Bowser y traicionar a los Toads"
+                "Antiguamente, los Goombas vivían en el Reino Champiñón, donde convivían con los Toads pacíficamente. No obstante, Pero, los Goombas decidieron unirse a las filas de Bowser."
         ));
 
         characters.add(new AppData(
