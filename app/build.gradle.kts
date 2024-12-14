@@ -29,19 +29,18 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
 
 dependencies {
-    implementation("androidx.core:core-splashscreen:1.0.1")
-    implementation("androidx.recyclerview:recyclerview:1.3.2")
-    implementation("androidx.cardview:cardview:1.0.0")
-    implementation ("com.squareup.picasso:picasso:2.71828")
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.1")
-    implementation ("androidx.navigation:navigation-ui-ktx:2.7.1")
-    implementation ("androidx.databinding:viewbinding:8.7.3")
+    implementation(libs.core.splashscreen)
+    implementation(libs.recyclerview)
+    implementation(libs.cardview)
+    implementation (libs.picasso)
+    implementation(libs.fragment)
+    implementation (libs.navigation.fragment.ktx)
+    implementation (libs.navigation.ui.ktx)
+    implementation (libs.viewbinding)
 
     implementation(libs.appcompat)
     implementation(libs.material)

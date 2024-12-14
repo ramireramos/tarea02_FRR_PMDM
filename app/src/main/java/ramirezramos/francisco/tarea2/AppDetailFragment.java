@@ -32,14 +32,14 @@ public class AppDetailFragment extends Fragment {
         // Obtener datos del argumento que inicia este fragmento
         if (getArguments() != null) {
             String image = getArguments().getString("image");
-            String name = getArguments().getString("name");
+            String character = getArguments().getString("character");
             String description = getArguments().getString("description");
 
             // Asignar los datos a los componentes
             Picasso.get()
                     .load(image)
                     .into(binding.image);
-            binding.name.setText(name);
+            binding.name.setText(character);
             binding.description.setText(description);
         }
     }

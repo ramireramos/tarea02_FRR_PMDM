@@ -53,7 +53,7 @@ public class AppListFragment extends Fragment {
         // Llenar la lista con datos de videojuegos
         characters.add(new AppData(
                 "https://m.media-amazon.com/images/I/71uS8Ra1aGL._AC_UF894,1000_QL80_.jpg", // Reemplaza con la ruta de la imagen
-                "Super Mario Bros. Wonder",
+                "Mario. El fontanero más dicharachero",
                 "Un juego de plataformas en un mundo vibrante lleno de sorpresas."
         ));
 
