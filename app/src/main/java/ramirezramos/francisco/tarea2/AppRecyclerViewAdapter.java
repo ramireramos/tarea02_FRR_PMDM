@@ -19,7 +19,7 @@ public class AppRecyclerViewAdapter extends RecyclerView.Adapter<AppViewHolder> 
         this.context = context;
     }
 
-    // Método que crea el ViewHolder
+    // Metodo que crea el ViewHolder
     @NonNull
     @Override
     public AppViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -29,13 +29,13 @@ public class AppRecyclerViewAdapter extends RecyclerView.Adapter<AppViewHolder> 
         return new AppViewHolder(binding);
     }
 
-    //    Método para enlazar datos con ek ViewHolder
+    // enlazar datos con ViewHolder
     @Override
     public void onBindViewHolder(@NonNull AppViewHolder holder, int position) {
         AppData currentCharacter = this.characters.get(position);
         holder.bind(currentCharacter);
 
-//        Manejar el evento de clic
+     // on_click_listener
         holder.itemView.setOnClickListener(view -> itemClicked(currentCharacter, view));
     }
 
@@ -45,7 +45,7 @@ public class AppRecyclerViewAdapter extends RecyclerView.Adapter<AppViewHolder> 
     }
 
     private void itemClicked(AppData currentCharacter, View view) {
-        // Llama a la función gameClicked de MainActivity, pasando la vista
+        // se ejecuta CharacterClicked de MainActivity,pulsando sobre el personaje
         ((MainActivity) context).characterClicked(currentCharacter, view);
     }
 }

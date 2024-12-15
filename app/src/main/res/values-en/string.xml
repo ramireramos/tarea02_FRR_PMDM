@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mario Inside</string>
+    <string name="marioapp">Tarea 02 FRR</string>
+    <string name="character_description">Character ion depth</string>
+    <string name="Mario">The main hero of the Mushroom Kingdom. Mario is very positive and always cheerful. You can recognize him by his blue overalls, his red cap and his characteristic mustache. Here we go!!</string>
+    <string name="Luigi">Mario\'s brother and hero of the Mushroom Kingdom. Luigi is instantly recognizable by his green cap and shirt.</string>
+    <string name="Toad">A resident of the Mushroom Kingdom, he works in the service of Princess Peach. Toad has red spots on his head, although others of his species come in a variety of colors.</string>
+    <string name="Peach">The beloved princess of the Mushroom Kingdom. He is extremely kind and is always working to create a world where everyone can live together and happily.</string>
+    <string name="Bowser">The king of the Koopas. Bowser is Mario\'s archenemy and is always wreaking havoc in the Mushroom Kingdom.</string>
+    <string name="Yoshi">Mario\'s reliable companion from Yoshi Island. It is green, but others of its species come in other colors, such as red, blue, pink, and yellow.</string>
+    <string name="Toadette">Toadette has a pink cap with white polka dots, which looks like a simple change from the colors of the other toads already seen. She has a unique set of braids.</string>
+    <string name="Goomba">Antiguamente, los Goombas vivían en el Reino Champiñón, donde convivían con los Toads pacíficamente. Pero, los Goombas decidieron unirse a las filas de Bowser.</string>
+    <string name="Koopa">Los Paratroopa son las clásicas tortugas con alas del mundo de Mario. Su función es la misma que la de los Koopa: acabar con Mario por orden de Bowser.</string>
+    <string name="Wario">La antítesis malvada de Mario. Esto se refleja en su personalidad malvada, y su gran astucia, todo lo contrario de Mario.</string>
+</resources>

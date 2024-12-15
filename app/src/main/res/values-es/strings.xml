@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mario Inside</string>
+    <string name="marioapp">Mundo Champiñón</string>
+    <string name="character_description">Personaje a fondo</string>
+    <string name="Mario">El héroe principal del Reino Champiñón. Mario es muy positivo y siempre está alegre. Lo podrás reconocer por sus overoles de color azul, su gorra roja y su característico bigote. Here we go!!</string>
+    <string name="Luigi">Hermano de Mario y héroe del Reino Champiñón. Luigi es reconocido instantáneamente por su gorra y camisa de color verde.</string>
+    <string name="Toad">Residente del Reino Champiñón, trabaja al servicio de la Princesa Peach. Toad tiene manchas rojas en la cabeza, aunque otros de su especie vienen en una variedad de colores.</string>
+    <string name="Peach">La querida princesa del Reino Champiñón. Es extremadamente amable y siempre está trabajando para crear un mundo en el que todos puedan convivir juntos y felices.</string>
+    <string name="Bowser">El rey de los Koopas. Bowser es el archienemigo de Mario y siempre está causando estragos en el Reino Champiñón.</string>
+    <string name="Yoshi">El confiable compañero de Mario originario de la Isla de Yoshi. Es de color verde, pero otros de su especie vienen de otros colores, como rojo, azul, rosa y amarillo.</string>
+    <string name="Toadette">Toadette tiene una gorra rosa con lunares blancos, que parece un simple cambio de los colores de los otros toads ya vistos. Ella tiene un conjunto único de trenzas.</string>
+    <string name="Goomba">Antiguamente, los Goombas vivían en el Reino Champiñón, donde convivían con los Toads pacíficamente. Pero, los Goombas decidieron unirse a las filas de Bowser.</string>
+    <string name="Koopa">Los Paratroopa son las clásicas tortugas con alas del mundo de Mario. Su función es la misma que la de los Koopa: acabar con Mario por orden de Bowser.</string>
+    <string name="Wario">La antítesis malvada de Mario. Esto se refleja en su personalidad malvada, y su gran astucia, todo lo contrario de Mario.</string>
+</resources>

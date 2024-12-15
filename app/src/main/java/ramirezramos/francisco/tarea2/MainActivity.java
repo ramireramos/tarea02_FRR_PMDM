@@ -26,28 +26,25 @@ public class MainActivity extends AppCompatActivity {
 
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        // Configura el NavController
-        navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment); //configuramos Navcontroller
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController);
 
 
     }
 
-    // Método para manejar el clic en un juego
+    // metodo on_click sobre personaje
     public void characterClicked(@NonNull AppData character, View view) {
-        // Crear un Bundle para pasar los datos al GameDetailFragment
+        // Bundle para pasar los datos al AppDetailFragment
         Bundle bundle = new Bundle();
-        bundle.putString("character", character.getName()); // Pasa el nombre del juego
-        bundle.putString("image", character.getImage()); // Pasa la imagen del juego
-        bundle.putString("description", character.getDescription()); // Pasa la descripción o más datos que necesites
+        bundle.putString("character", character.getName()); // nombre personaje
+        bundle.putString("image", character.getImage()); // imagen personaje
+        bundle.putString("description", character.getDescription()); // descripcion de personaje
 
-        // Navegar al GameDetailFragment con el Bundle
         Navigation.findNavController(view).navigate(R.id.appDetailFragment, bundle);
     }
     @Override
     public boolean onSupportNavigateUp() {
-        // Utiliza el método navigateUp del NavController
         return navController.navigateUp() || super.onSupportNavigateUp();
     }
 
